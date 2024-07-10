@@ -1,0 +1,45 @@
+﻿<Window x:Class="CS_1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CS_1"
+        mc:Ignorable="d"
+        Title="CS-2" Height="450" Width="800">
+    <Grid>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.2*"></RowDefinition>
+            <RowDefinition Height="0.2*"></RowDefinition>
+            <RowDefinition Height="0.2*"></RowDefinition>
+            <RowDefinition Height="0.2*"></RowDefinition>
+            <RowDefinition Height="0.2*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.23*"></ColumnDefinition>
+            <ColumnDefinition Width="0.6*"></ColumnDefinition>
+            <ColumnDefinition Width="0.3*"></ColumnDefinition>
+            <ColumnDefinition Width="0.7*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        
+        <TextBlock Grid.Column="0" Grid.Row="0" Text="Be Quo" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox Grid.Column="1" Grid.Row="0" x:Name="Nomen" Margin="0 6 5 6"/>
+
+        <TextBlock Grid.Column="0" Grid.Row="1" Text="Password" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox Grid.Column="1" Grid.Row="1" x:Name="PasswordInput" Margin="0 6 5 6"/>
+        <Button Grid.Column="2" Grid.Row="1" Name="BtnCode" Click="BtnCode_Click" Content="Code" Margin="5 5 5 5"/>
+
+        <TextBlock Grid.Column="0" Grid.Row="2" Text="Сode Password" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox Grid.Column="1" Grid.Row="2" x:Name="CodePassword" Margin="0 6 5 6"/>
+        <Button Grid.Column="2" Grid.Row="2" Name="BtnSeve" Click="BtnSeve_Click" Content="Seve" Margin="5 5 5 5"/>
+
+        <Button Grid.Column="2" Grid.Row="3" Name="BtnFile" Click="BtnFile_Click" Content="File" Margin="5 5 5 5"/>
+
+        <TextBlock Grid.Column="0" Grid.Row="4" Text="Output Password" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox Grid.Column="1" Grid.Row="4" x:Name="OutputPassword" Margin="0 6 5 6" Foreground="White"/>
+        <Button Grid.Column="2" Grid.Row="4" Name="BtnDecoding" Click="BtnDecoding_Click" Content="Decoding" Margin="5 5 5 5"/>
+        
+        <ComboBox Grid.Column="3" Grid.Row="0" x:Name="PasswordCB" Margin="5 5 15 0" SelectionChanged="PasswordCB_SelectionChanged"/>
+    </Grid>
+</Window>
